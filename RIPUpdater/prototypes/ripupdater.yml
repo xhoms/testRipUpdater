@@ -1,0 +1,22 @@
+url: https://github.com/xhoms/minemeld-msarticle
+description: >
+  Generates RIPv2 updates for all IPv4 indicators stored in the node
+
+prototypes:
+  ripv2Updater:
+    author: Palo Alto Networks TBD Team
+    class: RIPUpdater.RIPv2
+    development_status: EXPERIMENTAL
+    node_type: output
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - ripv2
+    description: >
+      Generates RIPv2 updates for all IPv4 indicators stored in the node
+    config:
+      age_out:
+        sudden_death: true
+        interval: 3600
+        default: null

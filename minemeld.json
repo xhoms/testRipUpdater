@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "name": "ripv2-updater-node",
+  "author": "Palo Alto Networks TBD Team",
+  "author_email": "xhoms@paloaltonetworks.com",
+  "description": "Output to provide IPv4 indicators as RIPv2 updates",
+  "entry_points": {
+    "minemeld_nodes": {
+      "RIPUpdater.RIPv2": "RIPUpdater.node:RIPv2"
+    },
+    "minemeld_prototypes": {
+      "RIPUpdater.prototypes": "RIPUpdater:prototypes"
+    }
+  },
+  "manifest_version": 0
+}
